@@ -3,35 +3,33 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>RPS-Starter</title>
+    <title>Heads or Tails Game</title>
     <link href="css/global.css" rel="stylesheet">
     <link href="css/modnorm.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <h1>Rock, Paper, Scissors</h1>
+    <h1>Heads or Tails</h1>
     <main class="choice">
       <section class="pchoice">
         <h2>You choose . . .</h2>
         <div class="images">
-          <img id="h-img" src="svg/coin-head.svg" alt="coin heads">
-          <img id="t-img" src="svg/coin-tail.svg" alt="coin tails">
+          <img id="h-img" src="svg/coin-head.svg" alt="coin heads" onclick="select('head')">
+          <img id="t-img" src="svg/coin-tail.svg" alt="coin tails" onclick="select('tail')">
         </div>
       </section>
       <section class="ochoice">
-        <h2>Opponent chooses . . .</h2>
-        <img id="o-img" src="svg/coin-flip.svg" alt="" >
+        <h2>Play</h2>
+        <div class="images">
+        <img id="o-img" src="svg/coin-flip.svg" alt="flip" onclick="flip('choice')">
+        </div>
       </section>
     </main>
     <section class="scoreboard">
-      <h2 id="result">It's a Tie.</h2>
+      <h2 id="result">You were: </h2>
       <div id="play" class="score">
         <p id="pscore">0</p>
-        <p class="label">Player</p>
-      </div>
-      <div id="opp" class="score">
-        <p id="oscore">0</p>
-        <p class="label">Opponent</p>
+        <p class="label">Player Score</p>
       </div>
     </section>
   <!-- loads javascript -->

@@ -14,8 +14,8 @@
       <section class="pchoice">
         <h2>You choose . . .</h2>
         <div class="images">
-          <img id="h-img" src="svg/coin-head.svg" alt="coin heads" onclick="select('head')">
-          <img id="t-img" src="svg/coin-tail.svg" alt="coin tails" onclick="select('tail')">
+          <img id="h-img" src="svg/coin-head.svg" alt="coin heads" onclick="op1('heads')">
+          <img id="t-img" src="svg/coin-tail.svg" alt="coin tails" onclick="op2('tails')">
         </div>
       </section>
       <section class="ochoice">
@@ -23,10 +23,12 @@
         <div class="images">
         <img id="o-img" src="svg/coin-flip.svg" alt="flip" onclick="flip('choice')">
         </div>
+        <button>Retry</button>
       </section>
     </main>
     <section class="scoreboard">
-      <h2 id="result">You were: </h2>
+      <h2 id="result">?</h2>
+      <h2 id="compare">?</h2>
       <div id="play" class="score">
         <p id="pscore">0</p>
         <p class="label">Player score</p>
